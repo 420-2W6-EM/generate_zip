@@ -19,8 +19,6 @@ jobs:
 
     - name: Configurer Git
       run: |
-        git config --global user.name 'gitHub actions runner'
-        git config --global user.email 'runner@4202w6.com'
 
     - name: Setup python and run script
       uses: actions/setup-python@v5
@@ -35,6 +33,9 @@ jobs:
 
     - name: Run Python script
       run: |
+      
+        git config --global user.name 'gitHub actions runner'
+        git config --global user.email 'runner@4202w6.com'
         git clone https://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@github.com/420-2W6-EM/generate_zip.git
         source venv/bin/activate
         python -u generate-zips-for-week.py configuration-fichier-r01-r02.json
