@@ -36,11 +36,5 @@ jobs:
     - name: Run Python script
       run: |
         source venv/bin/activate
-
-        git clone https://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@github.com/420-2W6-EM/exemple-r01-r02-n02-head-metadonnees.git
-        ls
-        #pwd
-        #echo ${{ github.workspace }}
-        #echo $GITHUB_WORKSPACE
         python -u generate-zips-for-week.py configuration-fichier-r01-r02.json
 
