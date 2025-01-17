@@ -1,0 +1,135 @@
+{
+    "NomRencontre" : "R01 et R02 - Introduction à HTML et à CSS",
+    "Exemples" : [
+        {
+            "NomDossier" : "Exemple 01 - Structure de base en HTML",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n01-structure-base-html.git"
+        },
+        {
+            "NomDossier" : "Exemple 02 - Head et métadonnées",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n02-head-metadonnees.git"
+        },
+        {
+            "NomDossier" : "Exemple 03 - Éléments de base en HTML",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n03-elements-base-html.git"
+        },
+        {
+            "NomDossier" : "Exemple 04 - Validation HTML",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n04-validation-html.git"
+        },
+        {
+            "NomDossier" : "Exemple 05 - Les éléments DIV, SPAN, ID, CLASS et intro aux styles CSS et sélecteurs de bases",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n05-div-span-id-class-intro-style.git"
+        },
+        {
+            "NomDossier" : "Exemple 06 - Navigation entre plusieurs pages et style placé dans un document CSS séparé",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n06-nav-style-fichier.git"
+        },
+        {
+            "NomDossier" : "Exemple 07 - La sémantique et les éléments HEADER, MAIN, FOOTER, NAV",
+            "LienDepotGit" :"https://github.com/420-2W6-EM/exemple-r01-r02-n07-elements-semantique.git"
+        }
+    ],
+    "Exercices" : [ 
+        {
+            "NomDossier" : "Exercice 01 - Exercices en ligne avec autocorrection",
+            "FichiersRajouter": [
+                {
+                    "destination_filename" : "Introductions.docx",
+                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 1 - Instructions - W3School exercices en ligne.docx"
+                }
+            ]
+        },
+        {
+            "NomDossier" : "Exercice 02 - Construire un premier document HTML",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n02-construire-1er-document.git",
+            "FichiersRajouter": [
+                {
+                    "destination_filename" : "Introductions.docx",
+                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 2 - Instructions - Simpsons partie 1.docx"
+                }
+            ]
+        },
+        {
+            "NomDossier" : "Exercice 03 - Listes, caractère spéciaux et Lorem ipsum",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n03-liste-carac-spec-lorem.git",
+            "FichiersRajouter": [
+                {
+                    "destination_filename" : "Introductions.docx",
+                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 3 - Instructions - Simpsons partie 2.docx"
+                }
+            ]
+        },
+        {
+            "NomDossier" : "Exercice 04 - Sémantique et styles",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n04-elements-semantique-style.git",
+            "FichiersRajouter": [
+                {
+                    "destination_filename" : "Introductions.docx",
+                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 4 - Instructions - Simpsons partie 3.docx"
+                }
+            ]
+        },
+        {
+            "NomDossier" : "Exercice 05 - Trouver les erreurs et rendre le document valide (W3C)",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n05-document-valide-w3c.git",
+            "FichiersRajouter": [
+                {
+                    "destination_filename" : "Introductions.docx",
+                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 5 - Instructions - W3C.docx"
+                }
+            ]
+        },
+        {
+            "NomDossier" : "Exercice 06 - Élément VIDEO et AUDIO",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n06-element-video-audio.git",
+            "FichiersRajouter": [
+                {
+                    "destination_filename" : "Introductions.docx",
+                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 6 - Instructions - VIDEO et AUDIO.docx"
+                }
+            ]
+        },
+        {
+            "NomDossier" : "Exercice 07 - Créer des règles CSS et en appliquer",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n07-creer-regles-css.git",
+            "FichiersRajouter": [
+                {
+                    "destination_filename" : "Introductions.docx",
+                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 7 - Instructions - Créer des règles CSS.docx"
+                }
+            ]
+        }
+    ],
+    "ConfigurationGlobal" : {
+        "FichiersSupprimer" : ["README.md", ".gitignore", "cd-values.yml", "dockerfile"],
+        "DossiersSupprimer" : [".github", ".git"],
+        "FichiersRajouterRacineZip": [
+                {
+                    "versions" : ["ExemplesVersionDepart"],
+                    "destination_filename" : "Activité brise-glace - version départ.docx",
+                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Activité brise-glace - version départ.docx"
+                },
+                {
+                    "versions" : ["ExemplesVersionSolution"],
+                    "destination_filename" : "Activité brise-glace - version solution.docx",
+                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Activité brise-glace - version solution.docx"
+                },
+                {
+                    "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution"],
+                    "destination_filename" : "R01 et R02 - Liens vidéos notions.url",
+                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/R01 et R02 - Liens vidéos notions.url"
+                },
+                {
+                    "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution", "ExercicesVersionDepart", "ExercicesVersionSolution"],
+                    "destination_filename" : "R01 et R02 - Liens utiles.docx",
+                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/R01 et R02 - Liens utiles.docx"
+                },
+                {
+                    "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution"],
+                    "destination_filename" : "R01 et R02 - Introduction à HTML et CSS.pptx",
+                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/R01 et R02 - Introduction à HTML et CSS.pptx"
+                }
+            ]
+    }
+}
