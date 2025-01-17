@@ -111,9 +111,9 @@ def process_items(items, global_config, base_dir, version):
         if 'LienDepotGit' in item:
             lienAvecToken = item['LienDepotGit'].replace('https://github.com', 'https://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@github.com')
             Repo.clone_from(lienAvecToken, item_dir)
-        #print(item_dir)
-        #print(version)
-        #print(item_config)
+        print(item_dir)
+        print(version)
+        print(item_config)
         add_files(item_dir, item_config)
         remove_files(item_dir, item_config, version)
         remove_files(item_dir, global_config, '')
