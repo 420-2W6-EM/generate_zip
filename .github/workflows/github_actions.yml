@@ -1,6 +1,6 @@
 # Pipeline utilisé par les enseignant
 # 
-# Sert à automatiser le déploiment continue des applications vers le cluster Kubernetes
+# Sert à automatiquement créé les fichiers ZIP pour les exercices et exemples de la semaine
 name: CI/CD Pipeline
 
 on:
