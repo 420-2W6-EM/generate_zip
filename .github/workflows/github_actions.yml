@@ -17,6 +17,14 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       
+    - name: Install python and dependencies needed for the script
+      run: |
+        sudo apt update
+        sudo apt -y upgrade
+        sudo apt install -y python3 python3-pip
+        pip install gitpython
+
+    
     - name: Configurer Git
       run: |
         git config --global user.name 'gitHub actions runner'
