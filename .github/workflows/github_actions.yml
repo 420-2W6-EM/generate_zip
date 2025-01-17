@@ -37,4 +37,7 @@ jobs:
       run: |
         source venv/bin/activate
         python -u generate-zips-for-week.py configuration-fichier-r01-r02.json
-
+        ls
+        find output -maxdepth 1 -type f -name "*.zip" -exec cp {} zip-generated \;
+        git add .
+        
