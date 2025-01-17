@@ -33,21 +33,9 @@ jobs:
 
     - name: Run Python script
       run: |
-      
-        git config --global user.name 'gitHub actions runner'
-        git config --global user.email 'runner@4202w6.com'
-        git clone https://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@github.com/420-2W6-EM/generate_zip.git
         source venv/bin/activate
         python -u generate-zips-for-week.py configuration-fichier-r01-r02.json
-        ls
-        cd zip-generated
-        ls
-        cd ../output
-        ls
-        cd ..
         find output -maxdepth 1 -type f -name "*.zip" -exec cp {} zip-generated \;
-        cd zip-generated
-        ls
 
     - name : Commit all changed files back to the repository
       uses: stefanzweifel/git-auto-commit-action@v5
