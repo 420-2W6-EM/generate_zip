@@ -10,7 +10,7 @@ on:
 
 jobs:
 
-  generate_zips_for_week : # Pour l'instant une seule job, mais il est possible d'en ajouter d'autres (ex : tests unitaires, validation des vulnérabilités, etc)
+  generate_zips_for_week : 
     runs-on: self-hosted   # Agent onprem à même le cluster Kubernetes pour réaliser l'exécution du build (machine linux)
     
     steps:
@@ -37,14 +37,11 @@ jobs:
       run: |
         source venv/bin/activate
 
-        echo configuration-fichier-r01-r02.json
-        cat configuration-fichier-r01-r02.json
-        echo generate-zips-for-week.py
-        cat generate-zips-for-week.py
+        git clone https://github.com/420-2W6-EM/exemple-r01-r02-n02-head-metadonnees.git
         ls
-        pwd
-        echo ${{ github.workspace }}
-        echo $GITHUB_WORKSPACE
+        #pwd
+        #echo ${{ github.workspace }}
+        #echo $GITHUB_WORKSPACE
         echo "python ./generate-zip-for-week.py ./configuration-fichier-r01-r02.json"
         python ./generate-zips-for-week.py ./configuration-fichier-r01-r02.json
 
