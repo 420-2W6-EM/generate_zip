@@ -42,5 +42,5 @@ jobs:
         #pwd
         #echo ${{ github.workspace }}
         #echo $GITHUB_WORKSPACE
-        python generate-zips-for-week.py
+        python -u generate-zips-for-week.py
 
