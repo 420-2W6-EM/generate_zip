@@ -1,0 +1,14 @@
+# Pipeline utilisé par les enseignant
+# 
+# Sert à automatiser le déploiment continue des applications vers le cluster Kubernetes
+name: CI/CD Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  call-workflow-generate-zip-for-students:
+    uses: 420-2w6-em/devops-pipelines/.github/workflows/generate_zips_for_week_and_commit-2w6.yml@main
+    with:
+      CONFIG_FILENAME_FOR_THE_WEEK: "configuration-fichier-r01-r02.json"

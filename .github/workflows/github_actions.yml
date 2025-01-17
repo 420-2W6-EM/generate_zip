@@ -4,9 +4,7 @@
 name: CI/CD Pipeline
 
 on:
-  push:             # Pipeline trigger lors d'un commit sur les branches du projets en suivant le standard GitFlow
-    branches: 
-      - main        # Branche principale
+  workflow_dispatch:
 
 jobs:
 
