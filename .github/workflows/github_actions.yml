@@ -40,6 +40,11 @@ jobs:
         ls
         cd zip-generated
         ls
+        cd ../output
+        ls
+        cd ..
         find output -maxdepth 1 -type f -name "*.zip" -exec cp {} zip-generated \;
+        cd zip-generated
+        ls
         git add .
         
