@@ -1,0 +1,35 @@
+# Pipeline utilisé par les enseignant
+# 
+# Sert à automatiser le déploiment continue des applications vers le cluster Kubernetes
+name: CI/CD Pipeline
+
+on:
+  push:             # Pipeline trigger lors d'un commit sur les branches du projets en suivant le standard GitFlow
+    branches: 
+      - main        # Branche principale
+
+jobs:
+
+  generate_zips_for_week : # Pour l'instant une seule job, mais il est possible d'en ajouter d'autres (ex : tests unitaires, validation des vulnérabilités, etc)
+    runs-on: self-hosted   # Agent onprem à même le cluster Kubernetes pour réaliser l'exécution du build (machine linux)
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Configurer Git
+      run: |
+        git config --global user.name 'gitHub actions runner'
+        git config --global user.email 'runner@4202w6.com'
+
+    - name: Login into private image repository
+      run: |
+        ls
+        git add .
+        git commit -m "Generate zips for the week"
+        git push
+
+#    - name: Generate zips for the week
+#      run: |
+#        python generate-zip-for-week.py configuration-fichier-r01-r02.json
+#        find output -maxdepth 1 -type f -name "*.zip" -exec cp {} zip-generated \;

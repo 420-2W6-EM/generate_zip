@@ -1,0 +1,15 @@
+{
+    "extensions": [".html",".js",".css",".cshtml",".cs"],
+    "deleteStartVersionExpressions": [
+        {"start": "<!--DEBUT-SUPPRIMER-VERSION-DEPART-->", "end": "<!--FIN-SUPPRIMER-VERSION-DEPART-->"},
+        {"start": "/**DEBUT-SUPPRIMER-VERSION-DEPART*/", "end": "/**FIN-SUPPRIMER-VERSION-DEPART*/"},
+        {"start": "/*DEBUT-SUPPRIMER-VERSION-DEPART*/", "end": "/*FIN-SUPPRIMER-VERSION-DEPART*/"},
+        {"start": "@*DEBUT-SUPPRIMER-VERSION-DEPART*@", "end": "@*FIN-SUPPRIMER-VERSION-DEPART*@"}
+    ],
+    "addInStartVersionExpressions": [
+        {"start": "<!--DEBUT-AJOUTER-VERSION-DEPART--><!--", "end": "--><!--FIN-AJOUTER-VERSION-DEPART-->"},
+        {"start": "/**DEBUT-AJOUTER-VERSION-DEPART*//**", "end": "*//**FIN-AJOUTER-VERSION-DEPART*/"},
+        {"start": "/*DEBUT-AJOUTER-VERSION-DEPART*//*", "end": "//*FIN-AJOUTER-VERSION-DEPART*/"},
+        {"start": "@*DEBUT-AJOUTER-VERSION-DEPART*@@*", "end": "*@@*FIN-AJOUTER-VERSION-DEPART*@"}
+    ]
+}
