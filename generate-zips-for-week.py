@@ -179,17 +179,18 @@ def main(config_file):
 if __name__ == "__main__":
     try:
         print('Début du script...')
-        import sys
+        #import sys
         print('Début du script prise 2...')
         #sys.stdin = os.fdopen(sys.stdin.fileno(), 'rb', buffering=0)
         #sys.stdout = os.fdopen(sys.stdout.fileno(), 'wb', buffering=0)
         #sys.stderr = os.fdopen(sys.stderr.fileno(), 'wb', buffering=0)
-        if len(sys.argv) != 2:
-            print("Usage: python process_files.py <config_filename_for_the_week>")
-            sys.exit(1)
+        #if len(sys.argv) != 2:
+            #print("Usage: python process_files.py <config_filename_for_the_week>")
+            #sys.exit(1)
 
-        config_filename_for_the_week = sys.argv[1]
-        main(config_filename_for_the_week)
+        #config_filename_for_the_week = sys.argv[1]
+        main("configuration-fichier-r01-r02.json")
+        #main(config_filename_for_the_week)
         print('Fin du script...')
     except Exception as e:
         print(f"Erreur: {e}")
