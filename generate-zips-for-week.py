@@ -109,6 +109,7 @@ def process_items(items, global_config, base_dir, version):
         item_dir = os.path.join(base_dir, item['NomDossier'])
         
         if 'LienDepotGit' in item:
+            lienAvecToken = item['LienDepotGit'].replace('https://', f'https://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@"]}@')
             Repo.clone_from(item['LienDepotGit'], item_dir)
         #print(item_dir)
         #print(version)
