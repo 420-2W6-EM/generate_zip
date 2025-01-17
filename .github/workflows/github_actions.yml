@@ -14,8 +14,8 @@ jobs:
     runs-on: self-hosted   # Agent onprem à même le cluster Kubernetes pour réaliser l'exécution du build (machine linux)
     
     steps:
-    #- name: Checkout code
-    #  uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
 
     - name: Configurer Git
       run: |
@@ -48,9 +48,6 @@ jobs:
         find output -maxdepth 1 -type f -name "*.zip" -exec cp {} zip-generated \;
         cd zip-generated
         ls
-        git add .
-        git commit -m "Generate zips for week"
-        git push
-     # env:
-     #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
+
+    - name : Commit all changed files back to the repository
+      uses: stefanzweifel/git-auto-commit-action@v5
