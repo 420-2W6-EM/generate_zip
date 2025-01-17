@@ -37,7 +37,7 @@ jobs:
       run: |
         source venv/bin/activate
 
-        git clone https://github.com/420-2W6-EM/exemple-r01-r02-n02-head-metadonnees.git
+        git clone https://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@github.com/420-2W6-EM/exemple-r01-r02-n02-head-metadonnees.git
         ls
         #pwd
         #echo ${{ github.workspace }}
