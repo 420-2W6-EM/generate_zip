@@ -177,13 +177,18 @@ def main(config_file):
             create_zip(zip_name, section_dir)
 
 if __name__ == "__main__":
-    print('Début du script...')
-    import sys
-    print('Début du script prise 2...')
-    if len(sys.argv) != 2:
-        print("Usage: python process_files.py <config_filename_for_the_week>")
-        sys.exit(1)
+    try:
+        print('Début du script...')
+        import sys
+        print('Début du script prise 2...')
+        if len(sys.argv) != 2:
+            print("Usage: python process_files.py <config_filename_for_the_week>")
+            sys.exit(1)
 
-    config_filename_for_the_week = sys.argv[1]
-    main(config_filename_for_the_week)
-    print('Fin du script...')
+        config_filename_for_the_week = sys.argv[1]
+        main(config_filename_for_the_week)
+        print('Fin du script...')
+    except Exception as e:
+        print(f"Erreur: {e}")
+        raise
+        sys.exit()
