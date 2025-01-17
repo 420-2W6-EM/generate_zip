@@ -26,7 +26,11 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.13' 
-    - run: python generate-zip-for-week.py configuration-fichier-r01-r02.json
+    - run: |
+        sudo chown runner-user:runner-group .
+        echo configuration-fichier-r01-r02.json
+        cat configuration-fichier-r01-r02.json
+        python generate-zip-for-week.py configuration-fichier-r01-r02.json
 
     - name: Generate zips for the week
       run: |
