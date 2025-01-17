@@ -177,6 +177,7 @@ def main(config_file):
             create_zip(zip_name, section_dir)
 
 if __name__ == "__main__":
+    print('Début du script...')
     import sys
     if len(sys.argv) != 2:
         print("Usage: python process_files.py <config_filename_for_the_week>")
@@ -184,3 +185,4 @@ if __name__ == "__main__":
 
     config_filename_for_the_week = sys.argv[1]
     main(config_filename_for_the_week)
+    print('Fin du script...')
