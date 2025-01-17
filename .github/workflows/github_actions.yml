@@ -26,7 +26,18 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.13' 
-    - run: |
+
+    - name: Set up virtual environment
+      run: |
+        python -m venv venv
+        source venv/bin/activate
+        pip install -r requirements.txt
+
+    - name: Run Python script
+      run: |
+        source venv/bin/activate
+        pip install gitpython
+        
         echo configuration-fichier-r01-r02.json
         cat configuration-fichier-r01-r02.json
         echo generate-zips-for-week.py
