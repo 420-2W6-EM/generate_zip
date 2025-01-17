@@ -14,8 +14,8 @@ jobs:
     runs-on: self-hosted   # Agent onprem à même le cluster Kubernetes pour réaliser l'exécution du build (machine linux)
     
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+    #- name: Checkout code
+    #  uses: actions/checkout@v4
 
     - name: Configurer Git
       run: |
@@ -35,6 +35,7 @@ jobs:
 
     - name: Run Python script
       run: |
+        git clone https://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@github.com/420-2W6-EM/generate_zip.git
         source venv/bin/activate
         python -u generate-zips-for-week.py configuration-fichier-r01-r02.json
         ls
