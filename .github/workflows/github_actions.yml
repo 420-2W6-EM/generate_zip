@@ -42,6 +42,5 @@ jobs:
         #pwd
         #echo ${{ github.workspace }}
         #echo $GITHUB_WORKSPACE
-        echo "python ./generate-zip-for-week.py ./configuration-fichier-r01-r02.json"
-        python generate-zips-for-week.py configuration-fichier-r01-r02.json
+        python generate-zips-for-week.py
 
