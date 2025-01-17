@@ -29,8 +29,8 @@ jobs:
     - run: |
         echo configuration-fichier-r01-r02.json
         cat configuration-fichier-r01-r02.json
-        echo generate-zip-for-week.py
-        cat generate-zip-for-week.py
+        echo generate-zips-for-week.py
+        cat generate-zips-for-week.py
         ls
         pwd
         echo ${{ github.workspace }}
