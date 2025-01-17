@@ -28,13 +28,9 @@ jobs:
         python -m venv venv
         source venv/bin/activate
 
-    - name: Install python dependencies for the script
-      run: |
-        pip install gitpython
-
-    - name: Run the python script to generate the ZIP files                                                                            
-      run: |
-        source venv/bin/activate                                                        
+    - name: Install dependency and run the python script to generate the ZIP files                                                                            
+      run: |  
+        pip install gitpython                                                  
         python -u generate-zips-for-week.py configuration-fichier-r01-r02.json 
         
     - name: Copy the generated ZIP files from the output directory to the zip-generated directory
