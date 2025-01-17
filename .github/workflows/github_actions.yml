@@ -13,30 +13,16 @@ jobs:
   generate_zips_for_week : # Pour l'instant une seule job, mais il est possible d'en ajouter d'autres (ex : tests unitaires, validation des vulnérabilités, etc)
     runs-on: self-hosted   # Agent onprem à même le cluster Kubernetes pour réaliser l'exécution du build (machine linux)
     
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-      
-    - name: Install python and dependencies needed for the script
-      run: |
-        python3 -V
-
     - name: Configurer Git
       run: |
         git config --global user.name 'gitHub actions runner'
         git config --global user.email 'runner@4202w6.com'
 
-    - name: Generate zips for the week
-      run: |
-        ls
-        python3 ./generate-zip-for-week.py ./configuration-fichier-r01-r02.json
-        find output -maxdepth 1 -type f -name "*.zip" -exec cp {} zip-generated \;
-
-    - name: Login into private image repository
-      run: |
-        ls
-        git add .
-        git commit -m "Generate zips for the week"
-        git push
-
-
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13' 
+    - run: python generate-zip-for-week.py configuration-fichier-r01-r02.json
+      
