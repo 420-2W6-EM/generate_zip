@@ -179,6 +179,7 @@ def main(config_file):
 if __name__ == "__main__":
     print('Début du script...')
     import sys
+    print('Début du script prise 2...')
     if len(sys.argv) != 2:
         print("Usage: python process_files.py <config_filename_for_the_week>")
         sys.exit(1)
