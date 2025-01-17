@@ -22,6 +22,11 @@ jobs:
         git config --global user.name 'gitHub actions runner'
         git config --global user.email 'runner@4202w6.com'
 
+    - name: Generate zips for the week
+      run: |
+        python generate-zip-for-week.py configuration-fichier-r01-r02.json
+        find output -maxdepth 1 -type f -name "*.zip" -exec cp {} zip-generated \;
+
     - name: Login into private image repository
       run: |
         ls
@@ -29,7 +34,4 @@ jobs:
         git commit -m "Generate zips for the week"
         git push
 
-#    - name: Generate zips for the week
-#      run: |
-#        python generate-zip-for-week.py configuration-fichier-r01-r02.json
-#        find output -maxdepth 1 -type f -name "*.zip" -exec cp {} zip-generated \;
+
