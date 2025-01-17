@@ -47,4 +47,8 @@ jobs:
         cd zip-generated
         ls
         git add .
+        git commit -m "Generate zips for week"
+        git push
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
