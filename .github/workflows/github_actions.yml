@@ -29,6 +29,7 @@ jobs:
         source venv/bin/activate
 
     - name: Install python dependencies for the script
+      run: |
         pip install gitpython
 
     - name: Run the python script to generate the ZIP files                                                                            
