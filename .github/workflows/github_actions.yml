@@ -1,7 +1,7 @@
 # Pipeline utilisé par les enseignant
 # 
 # Sert à automatiquement créé les fichiers ZIP pour les exercices et exemples de la semaine
-name: CI/CD Pipeline
+name: Generate files for students - Week 1 (old version)
 
 on:
   workflow_dispatch:

@@ -1,7 +1,7 @@
 # Pipeline utilisé par les enseignant
 # 
 # Sert à automatiser le déploiment continue des applications vers le cluster Kubernetes
-name: CI/CD Pipeline
+name: Generate files for students - Week 1
 
 on:
   workflow_dispatch:
