@@ -4,8 +4,8 @@
 SEARCH_TERM="r01-r02"
 
 # Target directory to copy matching directories to
-TARGET_DIR_START_VERSION="generated_start_version_tmp_output"
-TARGET_DIR_SOLUTION_VERSION="generated_solution_version_tmp_output"
+TARGET_DIR_START_VERSION="generated-start-version-tmp-output"
+TARGET_DIR_SOLUTION_VERSION="generated-solution-version-tmp-output"
 
 # Source directory containing the folders to search
 SOURCE_DIR=".."
@@ -30,5 +30,5 @@ done
 echo "Directories containing '$SEARCH_TERM' from '$SOURCE_DIR' have been copied to '$TARGET_DIR_START_VERSION' and '$TARGET_DIR_SOLUTION_VERSION'."
 
 # Unleash the disney magic
-#python generate-start-version.py $TARGET_DIR_START_VERSION -v versiondepart
-#python generate-start-version.py $TARGET_DIR_SOLUTION_VERSION -v versionsolution
+python generate-start-and-solution-version.py -v versiondepart $TARGET_DIR_START_VERSION 
+python generate-start-and-solution-version.py -v versionsolution $TARGET_DIR_SOLUTION_VERSION

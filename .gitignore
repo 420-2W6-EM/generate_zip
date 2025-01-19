@@ -44,6 +44,6 @@ project.lock.json
 nupkg/
 
 # Specific to this project
-generated_zip_tmp_output/
-generated_start_version_tmp_output/
-generated_solution_version_tmp_output/
+generated-start-version-tmp-output/
+generated-solution-version-tmp-output/
+generated-zips-tmp-output/

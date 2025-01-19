@@ -111,9 +111,6 @@ def process_items(items, global_config, base_dir, version):
         if 'LienDepotGit' in item:
             lienAvecToken = item['LienDepotGit'].replace('https://github.com', 'https://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@github.com')
             Repo.clone_from(lienAvecToken, item_dir)
-        print(item_dir)
-        print(version)
-        print(item_config)
         add_files(item_dir, item_config)
         remove_files(item_dir, item_config, version)
         remove_files(item_dir, global_config, '')
@@ -148,7 +145,7 @@ def main(config_file):
     config = load_config(config_file)
     global_config = config.get('ConfigurationGlobal', {})
     
-    base_dir = 'generated_zip_tmp_output'
+    base_dir = 'generated-zips-tmp-output'
     clean_up_directory(base_dir)
     
     sub_dirs = {
@@ -169,7 +166,11 @@ def main(config_file):
             
             process_items(config.get(section, []), global_config, section_dir, version)
             if version == 'VersionDepart':
-                command = ['python', "generate-start-version.py", section_dir, "configuration-start-version.json"]
+                command = ['python', "generate-start-and-solution-version.py", section_dir, "-v", "versiondepart"]
+                result = subprocess.run(command, capture_output=True, text=True)
+                
+            if version == 'VersionSolution':
+                command = ['python', "generate-start-and-solution-version.py", section_dir, "-v", "versionsolution"]
                 result = subprocess.run(command, capture_output=True, text=True)
 
             add_files_root_zip(section_dir, global_config, section, version)
@@ -178,7 +179,6 @@ def main(config_file):
 
 if __name__ == "__main__":
     try:
-        print('Début du script...')
         import sys
         if len(sys.argv) != 2:
             print("Usage: python process_files.py <config_filename_for_the_week>")
@@ -186,7 +186,6 @@ if __name__ == "__main__":
 
         config_filename_for_the_week = sys.argv[1]
         main(config_filename_for_the_week)
-        print('Fin du script...')
     except Exception as e:
         print(f"Erreur: {e}")
         raise

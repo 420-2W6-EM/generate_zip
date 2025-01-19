@@ -91,13 +91,13 @@ def apply_expression_rule_2(content, expression):
     lines = content.split('\n')
     result = []
     for line in lines:
-        trimmed_line = line.strip()
-        if start_pattern in trimmed_line and end_pattern in trimmed_line:
-            before_start = trimmed_line.split(start_pattern)[0]
-            after_end = trimmed_line.split(end_pattern)[1]
-            if before_start.strip() or after_end.strip():
-                line = line.replace(trimmed_line, before_start + after_end)
-        result.append(line)
+        while start_pattern in line and end_pattern in line:
+            start_index = line.find(start_pattern)
+            end_index = line.find(end_pattern, start_index)
+            if end_index == -1:
+                continue
+            line = line[:start_index] + line[end_index + len(end_pattern):]
+        result.append(line) 
     return '\n'.join(result)
 
 def apply_expression_rule_3(content, expression):
