@@ -111,6 +111,7 @@ def process_items(items, global_config, base_dir, version):
         if 'LienDepotGit' in item:
             lienAvecToken = item['LienDepotGit'].replace('https://github.com', 'https://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@github.com')
             Repo.clone_from(lienAvecToken, item_dir)
+            print(version, ' -', base_dir, ' - clone ', item['LienDepotGit'])
         add_files(item_dir, item_config)
         remove_files(item_dir, item_config, version)
         remove_files(item_dir, global_config, '')
@@ -166,10 +167,12 @@ def main(config_file):
             
             process_items(config.get(section, []), global_config, section_dir, version)
             if version == 'VersionDepart':
+                print("Générer version départ - ", section_dir) 
                 command = ['python', "generate-start-and-solution-version.py", section_dir, "-v", "versiondepart"]
                 result = subprocess.run(command, capture_output=True, text=True)
                 
             if version == 'VersionSolution':
+                print("Générer version solution - ", section_dir) 
                 command = ['python', "generate-start-and-solution-version.py", section_dir, "-v", "versionsolution"]
                 result = subprocess.run(command, capture_output=True, text=True)
 
