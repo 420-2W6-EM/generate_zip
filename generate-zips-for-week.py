@@ -178,6 +178,7 @@ def main(config_file):
             create_zip(zip_name, section_dir)
 
 if __name__ == "__main__":
+    print("Début script générateur code version de départ ou solution")
     try:
         import sys
         if len(sys.argv) != 2:
@@ -190,3 +191,4 @@ if __name__ == "__main__":
         print(f"Erreur: {e}")
         raise
         sys.exit()
+    print("Fin script générateur code version de départ ou solution")

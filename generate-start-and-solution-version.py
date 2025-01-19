@@ -171,6 +171,7 @@ def process_directory(directory, config, version):
                 process_file(file_path, delete_expressions, add_expressions, version)
 
 if __name__ == "__main__":
+    print("Début script générateur ZIPs - version de départ et solution")
     parser = argparse.ArgumentParser(description='Process files for start version.')
     parser.add_argument('directory', help='Directory to process')
     parser.add_argument('-c', '--config', default='configuration-start-version.json', help='Path to the configuration file')
@@ -183,3 +184,4 @@ if __name__ == "__main__":
 
     config = load_configuration(config_path)
     process_directory(directory, config, version)
+    print("Fin script générateur ZIPs")
