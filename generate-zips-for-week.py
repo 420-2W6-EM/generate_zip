@@ -148,7 +148,7 @@ def main(config_file):
     config = load_config(config_file)
     global_config = config.get('ConfigurationGlobal', {})
     
-    base_dir = 'output'
+    base_dir = 'generated_zip_tmp_output'
     clean_up_directory(base_dir)
     
     sub_dirs = {

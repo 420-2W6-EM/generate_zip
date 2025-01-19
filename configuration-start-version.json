@@ -8,8 +8,12 @@
     ],
     "addInStartVersionExpressions": [
         {"start": "<!--DEBUT-AJOUTER-VERSION-DEPART--><!--", "end": "--><!--FIN-AJOUTER-VERSION-DEPART-->"},
+        {"start": "<!--DEBUT-AJOUTER-VERSION-DEPART-->", "end": "<!--FIN-AJOUTER-VERSION-DEPART-->"},
         {"start": "/**DEBUT-AJOUTER-VERSION-DEPART*//**", "end": "*//**FIN-AJOUTER-VERSION-DEPART*/"},
-        {"start": "/*DEBUT-AJOUTER-VERSION-DEPART*//*", "end": "//*FIN-AJOUTER-VERSION-DEPART*/"},
-        {"start": "@*DEBUT-AJOUTER-VERSION-DEPART*@@*", "end": "*@@*FIN-AJOUTER-VERSION-DEPART*@"}
+        {"start": "/**DEBUT-AJOUTER-VERSION-DEPART*/", "end": "/**FIN-AJOUTER-VERSION-DEPART*/"},
+        {"start": "/*DEBUT-AJOUTER-VERSION-DEPART*//*", "end": "*//*FIN-AJOUTER-VERSION-DEPART*/"},
+        {"start": "/*DEBUT-AJOUTER-VERSION-DEPART*/", "end": "/*FIN-AJOUTER-VERSION-DEPART*/"},
+        {"start": "@*DEBUT-AJOUTER-VERSION-DEPART*@@*", "end": "*@@*FIN-AJOUTER-VERSION-DEPART*@"},
+        {"start": "@*DEBUT-AJOUTER-VERSION-DEPART*@", "end": "@*FIN-AJOUTER-VERSION-DEPART*@"}
     ]
 }
