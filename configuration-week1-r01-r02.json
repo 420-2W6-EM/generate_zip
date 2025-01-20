@@ -35,7 +35,7 @@
             "NomDossier" : "Exercice 01 - Exercices en ligne avec autocorrection",
             "FichiersRajouter": [
                 {
-                    "destination_filename" : "Introductions.docx",
+                    "destination_filename" : "Instructions.docx",
                     "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 1 - Instructions - W3School exercices en ligne.docx"
                 }
             ]
@@ -45,7 +45,7 @@
             "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n02-construire-1er-document.git",
             "FichiersRajouter": [
                 {
-                    "destination_filename" : "Introductions.docx",
+                    "destination_filename" : "Instructions.docx",
                     "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 2 - Instructions - Simpsons partie 1.docx"
                 }
             ]
@@ -55,7 +55,7 @@
             "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n03-liste-carac-spec-lorem.git",
             "FichiersRajouter": [
                 {
-                    "destination_filename" : "Introductions.docx",
+                    "destination_filename" : "Instructions.docx",
                     "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 3 - Instructions - Simpsons partie 2.docx"
                 }
             ]
@@ -65,7 +65,7 @@
             "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n04-elements-semantique-style.git",
             "FichiersRajouter": [
                 {
-                    "destination_filename" : "Introductions.docx",
+                    "destination_filename" : "Instructions.docx",
                     "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 4 - Instructions - Simpsons partie 3.docx"
                 }
             ]
@@ -75,7 +75,7 @@
             "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n05-document-valide-w3c.git",
             "FichiersRajouter": [
                 {
-                    "destination_filename" : "Introductions.docx",
+                    "destination_filename" : "Instructions.docx",
                     "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 5 - Instructions - W3C.docx"
                 }
             ]
@@ -85,7 +85,7 @@
             "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n06-element-video-audio.git",
             "FichiersRajouter": [
                 {
-                    "destination_filename" : "Introductions.docx",
+                    "destination_filename" : "Instructions.docx",
                     "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 6 - Instructions - VIDEO et AUDIO.docx"
                 }
             ]
@@ -95,7 +95,7 @@
             "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n07-creer-regles-css.git",
             "FichiersRajouter": [
                 {
-                    "destination_filename" : "Introductions.docx",
+                    "destination_filename" : "Instructions.docx",
                     "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 7 - Instructions - Créer des règles CSS.docx"
                 }
             ]
