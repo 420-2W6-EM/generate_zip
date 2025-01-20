@@ -35,7 +35,7 @@
             "NomDossier" : "Exercice 00 - Exercices en ligne avec autocorrection",
             "FichiersRajouter": [
                 {
-                    "destination_filename" : "Introductions.docx",
+                    "destination_filename" : "Instructions.docx",
                     "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/Exercice 0 - Instructions - w3school.docx"
                 }
             ]
@@ -45,7 +45,7 @@
             "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r03-r04-n01-territoire-chateau.git",
             "FichiersRajouter": [
                 {
-                    "destination_filename" : "Introductions.docx",
+                    "destination_filename" : "Instructions.docx",
                     "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/Exercice 1 - Instructions - Châteaux.docx"
                 }
             ]
@@ -55,7 +55,7 @@
             "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r03-r04-n02-propriete-display.git",
             "FichiersRajouter": [
                 {
-                    "destination_filename" : "Introductions.docx",
+                    "destination_filename" : "Instructions.docx",
                     "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/Exercice 2 - Instructions - Display.docx"
                 }
             ]
@@ -65,7 +65,7 @@
             "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r03-r04-n03-position-relatif-zindex.git",
             "FichiersRajouter": [
                 {
-                    "destination_filename" : "Introductions.docx",
+                    "destination_filename" : "Instructions.docx",
                     "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/Exercice 3 - Instructions - Position relatif z-index.docx"
                 }
             ]
@@ -75,7 +75,7 @@
             "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r03-r04-n04-position-absolute-fixed.git",
             "FichiersRajouter": [
                 {
-                    "destination_filename" : "Introductions.docx",
+                    "destination_filename" : "Instructions.docx",
                     "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/Exercice 4 - Instructions - Position absolute et fixed.docx"
                 }
             ]
@@ -85,7 +85,7 @@
             "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r03-r04-n05-transform-proprietes.git",
             "FichiersRajouter": [
                 {
-                    "destination_filename" : "Introductions.docx",
+                    "destination_filename" : "Instructions.docx",
                     "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/Exercice 5 - Instructions - transition propriété CSS.docx"
                 }
             ]
