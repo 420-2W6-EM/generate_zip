@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Term to search for in directory names
-SEARCH_TERM="r01-r02"
+SEARCH_TERM="r03-r04"
 
 # Target directory to copy matching directories to
 TARGET_DIR_START_VERSION="generated-start-version-tmp-output"

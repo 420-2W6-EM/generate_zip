@@ -1,102 +1,92 @@
 {
-    "NomRencontre" : "R01 et R02 - Introduction à HTML et à CSS",
+    "NomRencontre" : "R03 et R04 - Modèle en boîtes et positionnement",
     "Exemples" : [
         {
-            "NomDossier" : "Exemple 01 - Structure de base en HTML",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n01-structure-base-html.git"
+            "NomDossier" : "Exemple 01 - Le modèle en boîte (border, margin, padding, height, width, box-sizing)",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r03-r04-n01-modele-boite.git"
         },
         {
-            "NomDossier" : "Exemple 02 - Head et métadonnées",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n02-head-metadonnees.git"
+            "NomDossier" : "Exemple 02 - La disposition des éléments (inline, block, block, inline-block)",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r03-r04-n02-disposition-element.git"
         },
         {
-            "NomDossier" : "Exemple 03 - Éléments de base en HTML",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n03-elements-base-html.git"
+            "NomDossier" : "Exemple 03 - Transformer une liste UL en menu (étude de cas)",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r03-r04-n03-transform-ul-vers-menu.git"
         },
         {
-            "NomDossier" : "Exemple 04 - Validation HTML",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n04-validation-html.git"
+            "NomDossier" : "Exemple 04 - Positionnement (static, relatif, left, right, bottom, top)",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r03-r04-n04-position-static-relatif.git"
         },
         {
-            "NomDossier" : "Exemple 05 - Les éléments DIV, SPAN, ID, CLASS et intro aux styles CSS et sélecteurs de bases",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n05-div-span-id-class-intro-style.git"
+            "NomDossier" : "Exemple 05 - Positionnement (absolute, fixed, z-index, left, right, bottom, top)",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r03-r04-n05-position-absolute-fixed.git"
         },
         {
-            "NomDossier" : "Exemple 06 - Navigation entre plusieurs pages et style placé dans un document CSS séparé",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n06-nav-style-fichier.git"
+            "NomDossier" : "Exemple 06 - Animer les propriétés CSS et exemple de sélecteur pseudo-class (hover)",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r03-r04-n06-animer-propriete-css.git"
         },
         {
-            "NomDossier" : "Exemple 07 - La sémantique et les éléments HEADER, MAIN, FOOTER, NAV",
-            "LienDepotGit" :"https://github.com/420-2W6-EM/exemple-r01-r02-n07-elements-semantique.git"
+            "NomDossier" : "Exemple 07 - Sélecteurs et priorité des régles CSS (sans vidéo)",
+            "LienDepotGit" :"https://github.com/420-2W6-EM/exemple-r03-r04-n07-selecteur-css-et-priorite.git"
         }
     ],
     "Exercices" : [ 
         {
-            "NomDossier" : "Exercice 01 - Exercices en ligne avec autocorrection",
+            "NomDossier" : "Exercice 00 - Exercices en ligne avec autocorrection",
             "FichiersRajouter": [
                 {
                     "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 1 - Instructions - W3School exercices en ligne.docx"
+                    "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/Exercice 0 - Instructions - w3school.docx"
                 }
             ]
         },
         {
-            "NomDossier" : "Exercice 02 - Construire un premier document HTML",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n02-construire-1er-document.git",
+            "NomDossier" : "Exercice 1 - Afficher correctement les territoires des châteaux",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r03-r04-n01-territoire-chateau.git",
             "FichiersRajouter": [
                 {
                     "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 2 - Instructions - Simpsons partie 1.docx"
+                    "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/Exercice 1 - Instructions - Châteaux.docx"
                 }
             ]
         },
         {
-            "NomDossier" : "Exercice 03 - Listes, caractère spéciaux et Lorem ipsum",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n03-liste-carac-spec-lorem.git",
+            "NomDossier" : "Exercice 2 - La propriété Display",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r03-r04-n02-propriete-display.git",
             "FichiersRajouter": [
                 {
                     "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 3 - Instructions - Simpsons partie 2.docx"
+                    "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/Exercice 2 - Instructions - Display.docx"
                 }
             ]
         },
         {
-            "NomDossier" : "Exercice 04 - Sémantique et styles",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n04-elements-semantique-style.git",
+            "NomDossier" : "Exercice 3 - Le positionnement relatif et la troisième dimension (z-index)",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r03-r04-n03-position-relatif-zindex.git",
             "FichiersRajouter": [
                 {
                     "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 4 - Instructions - Simpsons partie 3.docx"
+                    "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/Exercice 3 - Instructions - Position relatif z-index.docx"
                 }
             ]
         },
         {
-            "NomDossier" : "Exercice 05 - Trouver les erreurs et rendre le document valide (W3C)",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n05-document-valide-w3c.git",
+            "NomDossier" : "Exercice 4 - Les positionnements absolute et fixed",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r03-r04-n04-position-absolute-fixed.git",
             "FichiersRajouter": [
                 {
                     "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 5 - Instructions - W3C.docx"
+                    "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/Exercice 4 - Instructions - Position absolute et fixed.docx"
                 }
             ]
         },
         {
-            "NomDossier" : "Exercice 06 - Élément VIDEO et AUDIO",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n06-element-video-audio.git",
+            "NomDossier" : "Exercice 5 - Appliquer une transition sur des propriétés",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r03-r04-n05-transform-proprietes.git",
             "FichiersRajouter": [
                 {
                     "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 6 - Instructions - VIDEO et AUDIO.docx"
-                }
-            ]
-        },
-        {
-            "NomDossier" : "Exercice 07 - Créer des règles CSS et en appliquer",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n07-creer-regles-css.git",
-            "FichiersRajouter": [
-                {
-                    "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 7 - Instructions - Créer des règles CSS.docx"
+                    "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/Exercice 5 - Instructions - transition propriété CSS.docx"
                 }
             ]
         }
@@ -106,29 +96,19 @@
         "DossiersSupprimer" : [".github", ".git"],
         "FichiersRajouterRacineZip": [
                 {
-                    "versions" : ["ExemplesVersionDepart"],
-                    "destination_filename" : "Activité brise-glace - version départ.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Activité brise-glace - version départ.docx"
-                },
-                {
-                    "versions" : ["ExemplesVersionSolution"],
-                    "destination_filename" : "Activité brise-glace - version solution.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Activité brise-glace - version solution.docx"
-                },
-                {
                     "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution"],
-                    "destination_filename" : "R01 et R02 - Liens vidéos notions.url",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/R01 et R02 - Liens vidéos notions.url"
+                    "destination_filename" : "R03 et R04 - Liens vidéos notions.url",
+                    "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/R03 et R04 - Liens vidéos notions.url"
                 },
                 {
                     "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution", "ExercicesVersionDepart", "ExercicesVersionSolution"],
-                    "destination_filename" : "R01 et R02 - Liens utiles.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/R01 et R02 - Liens utiles.docx"
+                    "destination_filename" : "R03 et R04 - Liens utiles.docx",
+                    "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/R03 et R04 - Liens utiles.docx"
                 },
                 {
                     "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution"],
-                    "destination_filename" : "R01 et R02 - Introduction à HTML et CSS.pptx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/R01 et R02 - Introduction à HTML et CSS.pptx"
+                    "destination_filename" : "R03 et R04 - Introduction à HTML et CSS.pptx",
+                    "source_full_file_path" : "R03 et R04 - Modèle en boîtes et positionnement et TP1/R03 et R04 - Modèle en boîtes et positionnement.pptx"
                 }
             ]
     }
