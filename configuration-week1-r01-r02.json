@@ -107,6 +107,11 @@
         "FichiersRajouterRacineZip": [
                 {
                     "versions" : ["ExemplesVersionDepart"],
+                    "destination_filename" : "PC_2025H_420-2W5-EM_Département-Informatique.pdf",
+                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/PC_2025H_420-2W5-EM_Département-Informatique.pdf"
+                },
+                {
+                    "versions" : ["ExemplesVersionDepart"],
                     "destination_filename" : "Activité brise-glace - version départ.docx",
                     "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Activité brise-glace - version départ.docx"
                 },
