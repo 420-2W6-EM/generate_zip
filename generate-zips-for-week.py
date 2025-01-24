@@ -109,8 +109,11 @@ def process_items(items, global_config, base_dir, version):
         item_dir = os.path.join(base_dir, item['NomDossier'])
         
         if 'LienDepotGit' in item:
-            #lienAvecToken = item['LienDepotGit'].replace('https://github.com', 'https://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@github.com')
-            lienAvecToken = item['LienDepotGit']
+
+            github_token = "Kevvix"
+            #https://medium.com/@DeveloperAdil/git-repository-cloning-with-personal-access-token-a-step-by-step-guide-cc86609ecd42
+            lienAvecToken = item['LienDepotGit'].replace('https://github.com', 'https://'+github_token+'@github.com')
+            print(lienAvecToken)
             Repo.clone_from(lienAvecToken, item_dir)
             print(version, ' -', base_dir, ' - clone ', item['LienDepotGit'])
         add_files(item_dir, item_config)
