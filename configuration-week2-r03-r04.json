@@ -32,7 +32,7 @@
     ],
     "Exercices" : [ 
         {
-            "NomDossier" : "Exercice 00 - Exercices en ligne avec autocorrection",
+            "NomDossier" : "Exercice 0 - Exercices en ligne avec autocorrection",
             "FichiersRajouter": [
                 {
                     "destination_filename" : "Instructions.docx",
