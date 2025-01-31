@@ -3,6 +3,7 @@ import os
 import shutil
 import zipfile
 import subprocess
+import argparse
 from git import Repo
 
 
@@ -94,7 +95,7 @@ def remove_directories(base_path, config, version):
         if os.path.exists(dir_path):
             shutil.rmtree(dir_path)
 
-def process_items(items, global_config, base_dir, version):
+def process_items(items, global_config, base_dir, version, github_token):
     """
     Traite chaque item (exemple ou exercice) en appliquant les configurations et en préparant les fichiers.
     
@@ -109,13 +110,10 @@ def process_items(items, global_config, base_dir, version):
         item_dir = os.path.join(base_dir, item['NomDossier'])
         
         if 'LienDepotGit' in item:
-
-            github_token = "Kevvix"
             #https://medium.com/@DeveloperAdil/git-repository-cloning-with-personal-access-token-a-step-by-step-guide-cc86609ecd42
             lienAvecToken = item['LienDepotGit'].replace('https://github.com', 'https://'+github_token+'@github.com')
-            print(lienAvecToken)
             Repo.clone_from(lienAvecToken, item_dir)
-            print(version, ' -', base_dir, ' - clone ', item['LienDepotGit'])
+            print("Cloner pour générer", version, '- vers répertoire : ', base_dir, ' - clone ', item['LienDepotGit'])
         add_files(item_dir, item_config)
         remove_files(item_dir, item_config, version)
         remove_files(item_dir, global_config, '')
@@ -141,7 +139,7 @@ def clean_up_directory(directory):
         shutil.rmtree(directory)
     os.makedirs(directory, exist_ok=True)
 
-def main(config_file):
+def main(config_file, token):
     """
     Point d'entrée principal du script. Charge la configuration et traite les exemples et exercices.
     
@@ -169,33 +167,47 @@ def main(config_file):
             section_key = f"{section}{version}"
             section_dir = sub_dirs[section_key]
             
-            process_items(config.get(section, []), global_config, section_dir, version)
+            process_items(config.get(section, []), global_config, section_dir, version, token)
             if version == 'VersionDepart':
-                print("Générer version départ - ", section_dir) 
-                command = ['python', "generate-start-and-solution-version.py", section_dir, "-v", "versiondepart"]
+                print("Générer version départ - répertoire : ", section_dir) 
+                command = ['python3', "generate-start-and-solution-version.py", section_dir, "-v", "versiondepart"]
+                print("Commande bash:", ' '.join(command))
+                print("\n")
                 result = subprocess.run(command, capture_output=True, text=True)
+                for ligne in result.stdout.split('\n'):
+                    print(ligne)
+                for ligne in result.stderr.split('\n'):
+                    print(ligne)
                 
             if version == 'VersionSolution':
-                print("Générer version solution - ", section_dir) 
-                command = ['python', "generate-start-and-solution-version.py", section_dir, "-v", "versionsolution"]
+                print("Générer version solution - répertoire : ", section_dir) 
+                command = ['python3', "generate-start-and-solution-version.py", section_dir , "-v", "versionsolution"]
+                print("Commande bash:", ' '.join(command))
+                print("\n")
                 result = subprocess.run(command, capture_output=True, text=True)
+                for ligne in result.stdout.split('\n'):
+                    print(ligne)
+                for ligne in result.stderr.split('\n'):
+                    print(ligne)
 
             add_files_root_zip(section_dir, global_config, section, version)
             zip_name = os.path.join(base_dir, f"{config['NomRencontre']} - {section} - {version_suffix}")
             create_zip(zip_name, section_dir)
 
 if __name__ == "__main__":
-    print("Début script générateur code version de départ ou solution")
+    print("******* Début script générateur ZIP *******")
     try:
-        import sys
-        if len(sys.argv) != 2:
-            print("Usage: python process_files.py <config_filename_for_the_week>")
-            sys.exit(1)
+        parser = argparse.ArgumentParser(description='Process files for start version.')
+        parser.add_argument('-c', '--config', default='configuration-start-version.json', help='Path to the configuration file')
+        parser.add_argument('-t', '--token', help='Github token for retriving repo')
+        args = parser.parse_args()
 
-        config_filename_for_the_week = sys.argv[1]
-        main(config_filename_for_the_week)
+        config_path = args.config
+        github_token = args.token
+        
+        main(config_path, github_token)
     except Exception as e:
         print(f"Erreur: {e}")
         raise
         sys.exit()
-    print("Fin script générateur code version de départ ou solution")
+    print("******* Fin script générateur ZIP *******")
