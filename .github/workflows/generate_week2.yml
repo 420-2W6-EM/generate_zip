@@ -12,3 +12,4 @@ jobs:
     uses: 420-2w6-em/devops-pipelines/.github/workflows/generate_zips_for_week_and_commit-2w6.yml@main
     with:
       CONFIG_FILENAME_FOR_THE_WEEK: "configuration-week2-r03-r04.json"
+    secrets: inherit
