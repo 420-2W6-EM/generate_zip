@@ -27,7 +27,6 @@ def process_file(file_path, delete_expressions, add_expressions, version):
     if version == 'versionsolution':
 
         for expression in delete_expressions:
-            print(expression)
             content = apply_expression_rule_3(content, expression)
             content = apply_expression_rule_4(content, expression)
         next
@@ -163,25 +162,32 @@ def process_directory(directory, config, version):
     add_expressions = config['addInStartVersionExpressions']
     extensions = config['extensions']
 
+    print(directory)
     for root, _, files in os.walk(directory):
         for file in files:
             if any(file.endswith(ext) for ext in extensions):
                 file_path = os.path.join(root, file)
+                print("   Fichier : " + file_path)
                 subprocess.run(["dos2unix", file_path]) # Convert file to Unix format, otherwise some lines may not be transform correctly
                 process_file(file_path, delete_expressions, add_expressions, version)
 
 if __name__ == "__main__":
-    print("Début script générateur ZIPs - version de départ et solution")
-    parser = argparse.ArgumentParser(description='Process files for start version.')
-    parser.add_argument('directory', help='Directory to process')
-    parser.add_argument('-c', '--config', default='configuration-start-version.json', help='Path to the configuration file')
-    parser.add_argument('-v', '--version', default='versiondepart', choices=['versiondepart', 'versionsolution'], help='Version to process (default: versiondepart)')
-    args = parser.parse_args()
+    try:
+        print("******* Début script générateur version *******")
+        parser = argparse.ArgumentParser(description='Process files for start version.')
+        parser.add_argument('directory', help='Directory to process')
+        parser.add_argument('-c', '--config', default='configuration-start-version.json', help='Path to the configuration file')
+        parser.add_argument('-v', '--version', default='versiondepart', choices=['versiondepart', 'versionsolution'], help='Version to process (default: versiondepart)')
+        args = parser.parse_args()
 
-    directory = args.directory
-    config_path = args.config
-    version = args.version
+        directory = args.directory
+        config_path = args.config
+        version = args.version
+        config = load_configuration(config_path)
+        process_directory(directory, config, version)
 
-    config = load_configuration(config_path)
-    process_directory(directory, config, version)
-    print("Fin script générateur ZIPs")
+    except Exception as e:
+        print(f"Erreur: {e}")
+        raise
+        sys.exit()
+    print("******* Fin script générateur version *******")
