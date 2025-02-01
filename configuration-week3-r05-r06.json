@@ -1,104 +1,59 @@
 {
-    "NomRencontre" : "R01 et R02 - Introduction à HTML et à CSS",
+    "NomRencontre" : "R05 et R06 - Intro aux MediaQuery et Bootstrap",
     "Exemples" : [
         {
-            "NomDossier" : "Exemple 01 - Structure de base en HTML",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n01-structure-base-html.git"
+            "NomDossier" : "Exemple 00 - Visual Studio Code - Abréviation Emmet avancé et multi-curseur",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r05-r06-n00-abreviation-emmet.git"
         },
         {
-            "NomDossier" : "Exemple 02 - Head et métadonnées",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n02-head-metadonnees.git"
+            "NomDossier" : "Exemple 01 - Introduction aux MediaQuery",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r05-r06-n01-intro-mediaquery.git"
         },
         {
-            "NomDossier" : "Exemple 03 - Éléments de base en HTML",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n03-elements-base-html.git"
+            "NomDossier" : "Exemple 02 - Utiliser des bibliothèques d'icônes (fontawesome)",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r05-r06-n02-bibliotheque-icones.git"
         },
         {
-            "NomDossier" : "Exemple 04 - Validation HTML",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n04-validation-html.git"
+            "NomDossier" : "Exemple 03 - Un aperçu rapide de ce que JavaScript permet de faire dans une page Web",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r05-r06-n03-javascript-apercu.git"
         },
         {
-            "NomDossier" : "Exemple 05 - Les éléments DIV, SPAN, ID, CLASS et intro aux styles CSS et sélecteurs de bases",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n05-div-span-id-class-intro-style.git"
+            "NomDossier" : "Exemple 04 - Bootstrap - Introduction et présentation du container",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r05-r06-n04-bootstrap-intro-container.git"
         },
         {
-            "NomDossier" : "Exemple 06 - Navigation entre plusieurs pages et style placé dans un document CSS séparé",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r01-r02-n06-nav-style-fichier.git"
+            "NomDossier" : "Exemple 05 - Bootstrap - Le système de grille (partie 1)",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r05-r06-n05-bootstrap-grille-partie1.git"
         },
         {
-            "NomDossier" : "Exemple 07 - La sémantique et les éléments HEADER, MAIN, FOOTER, NAV",
-            "LienDepotGit" :"https://github.com/420-2W6-EM/exemple-r01-r02-n07-elements-semantique.git"
+            "NomDossier" : "Exemple 06 - Bootstrap - Le système de grille (partie 2)",
+            "LienDepotGit" :"https://github.com/420-2W6-EM/exemple-r05-r06-n06-bootstrap-grille-partie2.git"
+        },
+        {
+            "NomDossier" : "Exemple 07 - Bootstrap - L'utilitaire pour les marges intérieurs et extérieurs",
+            "LienDepotGit" :"https://github.com/420-2W6-EM/exemple-r05-r06-n07-bootstrap-util-marges.git"
         }
     ],
     "Exercices" : [ 
         {
-            "NomDossier" : "Exercice 01 - Exercices en ligne avec autocorrection",
-            "FichiersRajouter": [
-                {
-                    "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 1 - Instructions - W3School exercices en ligne.docx"
-                }
-            ]
+            "NomDossier" : "Exercice 01 - Refaire des classes de Bootstrap",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r05-r06-n01-refaire-classes-bootstrap.git"
         },
         {
-            "NomDossier" : "Exercice 02 - Construire un premier document HTML",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n02-construire-1er-document.git",
-            "FichiersRajouter": [
-                {
-                    "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 2 - Instructions - Simpsons partie 1.docx"
-                }
-            ]
+            "NomDossier" : "Exercice 02 - Créer des MediaQuery et palindrome",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r05-r06-n02-css-mediaquery-palindrome.git"
         },
         {
-            "NomDossier" : "Exercice 03 - Listes, caractère spéciaux et Lorem ipsum",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n03-liste-carac-spec-lorem.git",
-            "FichiersRajouter": [
-                {
-                    "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 3 - Instructions - Simpsons partie 2.docx"
-                }
-            ]
+            "NomDossier" : "Exercice 03 - Bootstrap - Réseau sociaux",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r05-r06-n03-bootstrap-reseaux-sociaux.git"
         },
         {
-            "NomDossier" : "Exercice 04 - Sémantique et styles",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n04-elements-semantique-style.git",
-            "FichiersRajouter": [
-                {
-                    "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 4 - Instructions - Simpsons partie 3.docx"
-                }
-            ]
+            "NomDossier" : "Exercice 04 - Bootstrap - Poissons rouges",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r05-r06-n04-bootstrap-poissons-rouges.git"
         },
         {
-            "NomDossier" : "Exercice 05 - Trouver les erreurs et rendre le document valide (W3C)",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n05-document-valide-w3c.git",
-            "FichiersRajouter": [
-                {
-                    "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 5 - Instructions - W3C.docx"
-                }
-            ]
-        },
-        {
-            "NomDossier" : "Exercice 06 - Élément VIDEO et AUDIO",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n06-element-video-audio.git",
-            "FichiersRajouter": [
-                {
-                    "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 6 - Instructions - VIDEO et AUDIO.docx"
-                }
-            ]
-        },
-        {
-            "NomDossier" : "Exercice 07 - Créer des règles CSS et en appliquer",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r01-r02-n07-creer-regles-css.git",
-            "FichiersRajouter": [
-                {
-                    "destination_filename" : "Introductions.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Exercice 7 - Instructions - Créer des règles CSS.docx"
-                }
-            ]
+            "NomDossier" : "Exercice 05 - Bootstrap - Zelda",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r05-r06-n05-bootstrap-zelda.git"
         }
     ],
     "ConfigurationGlobal" : {
@@ -106,29 +61,19 @@
         "DossiersSupprimer" : [".github", ".git"],
         "FichiersRajouterRacineZip": [
                 {
-                    "versions" : ["ExemplesVersionDepart"],
-                    "destination_filename" : "Activité brise-glace - version départ.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Activité brise-glace - version départ.docx"
-                },
-                {
-                    "versions" : ["ExemplesVersionSolution"],
-                    "destination_filename" : "Activité brise-glace - version solution.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/Activité brise-glace - version solution.docx"
+                    "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution"],
+                    "destination_filename" : "R05 et R06 - Liens vidéos notions.url",
+                    "source_full_file_path" : "R05 et R06 - Intro aux MediaQuery et Bootstrap/R05 et R06 - Liens vidéos notions.url"
                 },
                 {
                     "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution"],
-                    "destination_filename" : "R01 et R02 - Liens vidéos notions.url",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/R01 et R02 - Liens vidéos notions.url"
+                    "destination_filename" : "R05 et R06 - Intro aux MediaQuery et Bootstrap.pptx",
+                    "source_full_file_path" : "R05 et R06 - Intro aux MediaQuery et Bootstrap/R05 et R06 - Introduction aux MediaQuery et Bootstrap.pptx"
                 },
                 {
-                    "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution", "ExercicesVersionDepart", "ExercicesVersionSolution"],
-                    "destination_filename" : "R01 et R02 - Liens utiles.docx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/R01 et R02 - Liens utiles.docx"
-                },
-                {
-                    "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution"],
-                    "destination_filename" : "R01 et R02 - Introduction à HTML et CSS.pptx",
-                    "source_full_file_path" : "R01 et R02 - Introduction à HTML et à CSS/R01 et R02 - Introduction à HTML et CSS.pptx"
+                    "versions" : ["ExercicesVersionDepart", "ExercicesVersionSolution"],
+                    "destination_filename" : "R05 et R06 - Intro aux MediaQuery et Bootstrap.pptx",
+                    "source_full_file_path" : "R05 et R06 - Intro aux MediaQuery et Bootstrap/Instructions pour tous les exercices.docx"
                 }
             ]
     }
