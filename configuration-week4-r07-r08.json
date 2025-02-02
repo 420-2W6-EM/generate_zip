@@ -1,0 +1,59 @@
+{
+    "NomRencontre" : "R07 et R08 - Tableaux et composants Bootstrap",
+    "Exemples" : [
+        {
+            "NomDossier" : "Exemple 00 - Visual Studio Code - Les snippets et l'autocomplétition des classes CSS",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r07-r08-n00-snippet-bootstrap.git"
+        },
+        {
+            "NomDossier" : "Exemple 01 - Les tableaux de données (table, thead, tbody, ... et Bootstrap)",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r07-r08-n01-tableau-bootstrap.git"
+        },
+        {
+            "NomDossier" : "Exemple 02 - Bootstrap - Les composants (exemple d'un carousel)",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r07-r08-n02-bootstrap-carousel.git"
+        },
+        {
+            "NomDossier" : "Exemple 03 - Bootstrap - Les composants (exemple d'un collapse)",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r07-r08-n03-bootstrap-collapse.git"
+        }
+    ],
+    "Exercices" : [ 
+        {
+            "NomDossier" : "Exercice 01 - Mon horaire!",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r07-r08-n01-tableau-mon-horaire.git",
+            "FichiersRajouter": [
+                {
+                    "destination_filename" : "Instructions.docx",
+                    "source_full_file_path" : "R07 et R08 - Tableaux et composants Bootstrap/R07 et R08 - Instructions exercice - mon horaire.docx"
+                }
+            ]
+        },
+        {
+            "NomDossier" : "Exercice 02 - Star Wars IX",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r07-r08-n02-bootstrap-skywalker.git",
+            "FichiersRajouter": [
+                {
+                    "destination_filename" : "Instructions.docx",
+                    "source_full_file_path" : "R07 et R08 - Tableaux et composants Bootstrap/R07 et R08 - Instructions exercice - star wars.docx"
+                }
+            ]
+        }
+    ],
+    "ConfigurationGlobal" : {
+        "FichiersSupprimer" : ["README.md", ".gitignore", "cd-values.yml", "dockerfile"],
+        "DossiersSupprimer" : [".github", ".git"],
+        "FichiersRajouterRacineZip": [
+                {
+                    "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution"],
+                    "destination_filename" : "R07 et R08 - Liens vidéos notions.url",
+                    "source_full_file_path" : "R07 et R08 - Tableaux et composants Bootstrap/R07 et R08 - Liens vidéos notions.url"
+                },
+                {
+                    "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution"],
+                    "destination_filename" : "R07 et R08 - Tableaux et composants Bootstrap.pptx",
+                    "source_full_file_path" : "R07 et R08 - Tableaux et composants Bootstrap/R07 et R08 - Tableaux et composants Bootstrap.pptx"
+                }
+            ]
+    }
+}

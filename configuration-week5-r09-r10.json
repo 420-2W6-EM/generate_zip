@@ -1,0 +1,41 @@
+{
+    "NomRencontre" : "R09 et R10 - Introduction aux formulaires HTML",
+    "Exemples" : [
+        {
+            "NomDossier" : "Exemple 01 - Introduction aux formulaires et aux champs possibles",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r09-r10-n01-intro-form.git"
+        },
+        {
+            "NomDossier" : "Exemple 02 - Structurer un formulaire avec Bootstrap",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exemple-r09-r10-n02-bootstrap-form.git"
+        }
+    ],
+    "Exercices" : [ 
+        {
+            "NomDossier" : "Exercice 01 - Rejoindre la force, formulaire d'inscription",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r09-r10-n01-bootstrap-rejoindre-la-force.git",
+            "FichiersRajouter": [
+                {
+                    "destination_filename" : "Instructions.docx",
+                    "source_full_file_path" : "R09 et R10 - Introduction aux formulaires HTML/R09 et R10 - Instructions exercice - rejoindre la force.docx"
+                }
+            ]
+        }
+    ],
+    "ConfigurationGlobal" : {
+        "FichiersSupprimer" : ["README.md", ".gitignore", "cd-values.yml", "dockerfile"],
+        "DossiersSupprimer" : [".github", ".git"],
+        "FichiersRajouterRacineZip": [
+                {
+                    "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution"],
+                    "destination_filename" : "R09 et R10 - Liens vidéos notions.url",
+                    "source_full_file_path" : "R09 et R10 - Introduction aux formulaires HTML/R09 et R10 - Liens vidéos notions.url"
+                },
+                {
+                    "versions" : ["ExemplesVersionDepart", "ExemplesVersionSolution"],
+                    "destination_filename" : "R09 et R10 - Introduction aux formulaires HTML.pptx",
+                    "source_full_file_path" : "R09 et R10 - Introduction aux formulaires HTML/R09 et R10 - Introduction aux formulaires HTML.pptx"
+                }
+            ]
+    }
+}
