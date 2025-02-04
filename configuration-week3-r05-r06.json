@@ -48,12 +48,12 @@
             "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r05-r06-n03-bootstrap-reseaux-sociaux.git"
         },
         {
-            "NomDossier" : "Exercice 04 - Bootstrap - Poissons rouges",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r05-r06-n04-bootstrap-poissons-rouges.git"
+            "NomDossier" : "Exercice 04 - Bootstrap - Zelda",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r05-r06-n05-bootstrap-zelda.git"
         },
         {
-            "NomDossier" : "Exercice 05 - Bootstrap - Zelda",
-            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r05-r06-n05-bootstrap-zelda.git"
+            "NomDossier" : "Exercice 05 - Bootstrap - Poissons rouges",
+            "LienDepotGit" : "https://github.com/420-2W6-EM/exercice-r05-r06-n04-bootstrap-poissons-rouges.git"
         }
     ],
     "ConfigurationGlobal" : {
