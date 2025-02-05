@@ -72,7 +72,7 @@
                 },
                 {
                     "versions" : ["ExercicesVersionDepart", "ExercicesVersionSolution"],
-                    "destination_filename" : "R05 et R06 - Intro aux MediaQuery et Bootstrap.pptx",
+                    "destination_filename" : "R05 et R06 - Instructions pour tous les exercices.docx",
                     "source_full_file_path" : "R05 et R06 - Intro aux MediaQuery et Bootstrap/Instructions pour tous les exercices.docx"
                 }
             ]
